@@ -94,7 +94,7 @@ function renderCartProduct(){
 
 // Fetch data from json index
 const fetchDataIndex = async () => {
-    const res = await fetch('../json/book.json')
+    const res = await fetch('json/book.json')
     const data = await res.json();
     books = data;
     renderCards();
