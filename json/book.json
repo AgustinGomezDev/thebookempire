@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "It Starts with Us",
+        "author": "Colleen Hoover",
+        "genre": ["Novel" , "Fiction", "Romance"],
+        "price": 12.98,
+        "img": "https://m.media-amazon.com/images/I/71PNGYHykrL.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Friends, Lovers, and the Big Terrible Thing",
+        "author": "Matthew Perry",
+        "genre": ["Autobiography"],
+        "price": 20.12,
+        "img": "https://m.media-amazon.com/images/I/81ZkvDcuCzL.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Diary of a Wimpy Kid Book 17",
+        "author": "Jeff Kinney",
+        "genre": ["Graphic novel", "Children literature"],
+        "price": 8.79,
+        "img": "https://m.media-amazon.com/images/I/81PQlW-p8nL.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Long Shadows",
+        "author": "David Baldacci",
+        "genre": ["Mystery", "Suspense", "Thriller"],
+        "price": 16.49,
+        "img": "https://www.grandcentralpublishing.com/wp-content/uploads/2022/06/9781538719824.jpg?fit=447%2C675"
+    },
+    {
+        "id": 5,
+        "title": "The Fault in Our Stars",
+        "author": "John Green",
+        "genre": ["Romance"],
+        "price": 6.19,
+        "img": "https://upload.wikimedia.org/wikipedia/en/a/a9/The_Fault_in_Our_Stars.jpg"
+    },
+    {
+        "id": 6,
+        "title": "The Diary of a Young Girl",
+        "author": "Anne Frank",
+        "genre": ["Autobiography"],
+        "price": 25.11,
+        "img": "https://m.media-amazon.com/images/I/81xPFVVGesL.jpg"
+    }
+]

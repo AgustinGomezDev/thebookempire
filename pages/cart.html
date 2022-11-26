@@ -25,15 +25,16 @@
         <main>
             <div class="row me-0">
                 <div class="col-12 p-4">
-                    <h1 class="fs-3 text-center">Your Cart</h1>
-                    <div id="cart" class="d-flex justify-content-center align-items-center flex-wrap gap-2 p-0 m-0 mt-3">
-
+                    <div id="cart-info" class="d-flex justify-content-center align-items-center flex-column">
+                        <h1 id="title" class="fs-3 text-center">Your Cart</h1>
                     </div>
+                    <div id="cart" class="d-flex justify-content-center align-items-center flex-wrap gap-2 p-0 m-0 mt-3"></div>
+                    <div id="purchase-div"></div>
                 </div>
             </div>
         </main>
     </div>
-    <script src="../src/book.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../src/functions.js"></script>
     <script src="../src/cart.js"></script>
 </body>
