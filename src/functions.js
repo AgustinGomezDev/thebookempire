@@ -1,31 +1,3 @@
-// Functions for the simulator
-function buy(){
-    let book = Number(prompt("Which book do you want to buy?\n\n1-> It Starts with Us\n2-> Friends, Lovers, and the Big Terrible Thing\n3-> Diary of a Wimpy Kid Book 17\n4-> Long Shadows"));
-
-    if(book<1 || book>4){
-        alert("We don't have this book, please choose one from the list!");
-        buy();
-    }
-
-    switch(book){
-        case 1: chosenBook(0); break;
-        case 2: chosenBook(1); break;
-        case 3: chosenBook(2); break;
-        case 4: chosenBook(3); break;
-    }
-}
-
-function chosenBook(num){
-    alert("Nice we will save the book " + books[num].title + " for you!");
-    let bookData = Number(prompt("Let me tell you some information about your book:\n\nTitle: "+ books[num].title + "\nAuthor: "+ books[num].author + "\nGenre: "+ books[num].genre + "\nPrice: US$"+ books[num].price +"\n\n1-> Purchase\n2-> Cancel"));
-
-    if(bookData==2){
-        alert("Maybe another day...");
-    }else{
-        alert("Your purchase has been entered into the system, we will contact you for news, Goodbye " + customer)
-    }
-}
-
 // Function to create a card
 function createCard(book){
     const div = document.createElement('div');
@@ -134,7 +106,8 @@ const cartLength = () => {
         const a = document.createElement('a');
         a.href = '../index.html';
         a.textContent = 'Back to home';
-        a.classList.add('book-btn');
+        a.classList.add('btn');
+        a.classList.add('btn-primary');
         a.classList.add('a');
         a.classList.add('text-decoration-none');
         cartInfo.appendChild(a);
@@ -143,28 +116,8 @@ const cartLength = () => {
         const div = document.createElement('div');
         div.innerHTML=`
         <div class="w-100 d-flex justify-content-center align-items-center p-3">
-            <button id="purchase" class="book-btn book-purchase">Purchase</button>
+            <a href="form.html" id="purchase" class="btn btn-primary text-decoration-none">Purchase</a>
         </div>`;
-        div.addEventListener('click', () => {
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, purchase it!'
-              }).then((result) => {
-                if (result.isConfirmed) {
-                  Swal.fire(
-                    'Purchased!',
-                    'Your cart has been purchased.',
-                    'success'
-                  )
-                }
-              })
-        });
-
         if(!purchaseDiv.firstChild){
             purchaseDiv.append(div);
         }

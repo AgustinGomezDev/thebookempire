@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/png">
+    <title>TheBookEmpire | Purchase</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header class="row m-0 bg-light p-2 shadow-lg w-100 position-fixed">
+            <nav class="col-12 d-flex justify-content-between align-items-center">
+                <a href="../index.html" class="text-decoration-none fw-bold fs-2">TheBook<span
+                        class="fw-semibold">Empire</span></a>
+                <a href="cart.html" class="text-decoration-none fw-semibold fs-5">Cart</a>
+            </nav>
+        </header>
+        <main>
+            <div class="row me-0">
+                <div class="col-12 p-5">
+                    <form class="p-3" id="form">
+                        <div class="mb-3 row">
+                            <label class="form-label fw-bold">Full name <span style="color: red;">*</span></label>
+                            <div class="col">
+                                <label class="form-label">First name</label>
+                                <input type="text" class="form-control" placeholder="Ex. John" required>
+                            </div>    
+                            <div class="col">
+                                <label class="form-label">Last name</label>
+                                <input type="text" class="form-control" placeholder="Ex. MacAllister">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <p class="form-label fw-bold">Contact information <span style="color: red;">*</span></p>
+                            <div class="col">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Ex. john@gmail.com">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Phone number</label>
+                                <input type="number" class="form-control" placeholder="Ex. +598 093 521 131">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <p class="form-label fw-bold">Address <span style="color: red;">*</span></p>
+                            <div class="col">
+                                <label class="form-label">Street address</label>
+                                <input type="email" class="form-control" placeholder="Ex. Little Seoul 12">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Street addres line 2</label>
+                                <input type="email" class="form-control" placeholder="Ex. Rodson Avenue">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control" placeholder="Ex. Chicago">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Postal code</label>
+                                <input type="number" class="form-control" placeholder="12081" min="0">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <p class="form-label fw-bold">Credit card <span style="color: red;">*</span></p>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label class="form-label">Number</label>
+                                    <input type="number" class="form-control" placeholder="Ex. 5215 1251 2523 1231" min="0">
+                                </div>
+                                <div class="col">
+                                    <label class="form-label">Card owner</label>
+                                    <input type="text" class="form-control" placeholder="Ex. Mike Occoner">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label">Expiration date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label class="form-label">CVV</label>
+                                    <input type="number" class="form-control" placeholder="Ex. 421" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="form-text">We'll never share your information with anyone else.</p>
+                        <button type="submit" class="btn btn-primary" id="submit-purchase">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../src/functions.js"></script>
+    <script src="../src/form.js"></script>
+</body>
+
+</html>
